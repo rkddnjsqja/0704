@@ -8,7 +8,6 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -86,6 +85,9 @@ public class GUIServer extends JFrame{
 			while(true) {
 				//대화시작
 				String msg=buffr.readLine();//듣기
+				//실시간 모니터링..
+				area.append(msg+"\n");
+				
 				//보내기
 				buffw.write(msg+"\n");
 				buffw.flush();//버퍼비우기
