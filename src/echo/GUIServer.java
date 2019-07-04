@@ -1,4 +1,4 @@
-package net;
+package echo;
 //콘솔기반의 서버이용이 불편함으로 그래픽모드로 개발하자!!
 
 import java.awt.BorderLayout;
